@@ -19,8 +19,8 @@
 # For more info:
 # https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
 
-name=Arduino SAMD (32-bits ARM Cortex-M0+) Boards
-version=1.8.11
+name=Hutscape Boards
+version=1.0.0
 
 # Compile variables
 # -----------------
@@ -240,4 +240,3 @@ tools.openocd-withbootsize.erase.pattern=
 tools.openocd-withbootsize.bootloader.params.verbose=-d2
 tools.openocd-withbootsize.bootloader.params.quiet=-d0
 tools.openocd-withbootsize.bootloader.pattern="{path}/{cmd}" {bootloader.verbose} -s "{path}/share/openocd/scripts/" -f "{runtime.platform.path}/variants/{build.variant}/{build.openocdscript}" -c "telnet_port disabled; init; halt; at91samd bootloader 0; program {{runtime.platform.path}/bootloaders/{bootloader.file}} verify reset; shutdown"
-
