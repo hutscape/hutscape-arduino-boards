@@ -16,7 +16,7 @@
 
 # Oak (Native USB Port)
 # --------------------------------------
-oak.name=Arduino Zero (Native USB Port)
+oak.name=Oak (Native USB Port)
 oak.vid.0=0x2341
 oak.pid.0=0x804d
 oak.vid.1=0x2341
@@ -35,14 +35,14 @@ oak.upload.wait_for_upload_port=true
 oak.upload.native_usb=true
 oak.build.mcu=cortex-m0plus
 oak.build.f_cpu=48000000L
-oak.build.usb_product="Arduino Zero"
-oak.build.usb_manufacturer="Arduino LLC"
-oak.build.board=SAMD_ZERO
+oak.build.usb_product="Hutscape Oak"
+oak.build.usb_manufacturer="Hutscape"
+oak.build.board=OAK
 oak.build.core=arduino
 oak.build.extra_flags=-DCRYSTALLESS -D__SAMD21G18A__ {build.usb_flags}
 oak.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
 oak.build.openocdscript=openocd_scripts/arduino_zero.cfg
-oak.build.variant=arduino_zero
+oak.build.variant=oak
 oak.build.variant_system_lib=
 oak.build.vid=0x2341
 oak.build.pid=0x804d
